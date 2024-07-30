@@ -23,7 +23,7 @@ public static void browserlaunch(String browserlaunch) {
 		driver=new FirefoxDriver();
 		break;
 	default:
-	System.out.println("browser not fount");
+	System.out.println("browser not found");
 	break;
 	}
 }
@@ -46,5 +46,16 @@ public static void wait(int time) throws InterruptedException {
 // Webelement method for click 
 public static void click(WebElement element) {
 	element.click();
+}
+//alerts
+public static void alertsaccept(WebDriver driver) {
+	driver.switchTo().alert().accept();
+}
+public static void alertscancel(WebDriver driver) {
+	driver.switchTo().alert().dismiss();
+	
+}
+public static void alertsprompt(WebDriver driver,String value) {
+	driver.switchTo().alert().sendKeys(value);
 }
 }

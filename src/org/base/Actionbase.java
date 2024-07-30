@@ -11,6 +11,7 @@ public class Actionbase {
 public static WebDriver driver;
 public static Actions action;
 public static void launchbrowser(String browsername) {
+	System.setProperty("chrome", "C:\\vishnu\\test\\gitCode\\Resource\\chromedriver.exe");
 	switch(browsername) {
 	case "chrome":
 	driver=new ChromeDriver();

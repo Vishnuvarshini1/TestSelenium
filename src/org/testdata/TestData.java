@@ -6,6 +6,7 @@ public static String cBrowser="chrome";
 public static String eBrowser="edge";
 public static String fBrowser="firefox";
 public static String facebookUrl="https://www.facebook.com/";
+public static String alerturl="https://www.leafground.com/alert.xhtml";
 public static String fbuservalue="email";
 public static String fbpassvalue="pass";
 public static String user="vishnu";
