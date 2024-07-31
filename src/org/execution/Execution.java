@@ -11,15 +11,15 @@ public static void main(String[] args) throws InterruptedException {
 	Base.browserlaunch(TestData.cBrowser);
 	Base.maxwindow();
 	//Base.getUrl(TestData.facebookUrl);
-	Base.getUrl(TestData.alerturl);
+	Base.getUrl("https://netbanking.hdfcbank.com/netbanking/");
 	Base.wait(2000);
-	//Base.inputText(Repository.id(TestData.fbuservalue),TestData.user );
-	
+	Base.click(Repository.tagname("frame"));
+	Base.frameindex(driver, 0);
 	Base.wait(2000);
 	//Base.inputText(Repository.id(TestData.fbpassvalue),TestData.pass );
 	//Base.wait(2000);
 	//Base.click(Repository.xpath(TestData.loginbtn));
-	Base.click(Repository.xpath("(//span[text()='Show'])[1]"));
-	Base.alertsaccept(driver);
+	Base.inputText(Repository.xpath("//input[@type='text']"), "vishnu");
+	//Base.alertsaccept(driver);
 }
 }

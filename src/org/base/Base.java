@@ -58,4 +58,14 @@ public static void alertscancel(WebDriver driver) {
 public static void alertsprompt(WebDriver driver,String value) {
 	driver.switchTo().alert().sendKeys(value);
 }
+//frames
+	public static void frameindex(WebDriver driver,int index) {
+		driver.switchTo().frame(index);
+	}
+	public static void framename(WebDriver driver,String name) {
+		driver.switchTo().frame(name);
+	}
+	public static void framewebelement(WebDriver driver,WebElement element) {
+		driver.switchTo().frame(element);
+	}
 }
